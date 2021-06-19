@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>PlexWeather | Made with ❤️ by Plextora</title>
+        <link rel="stylesheet" href="css/styling.css">
+	</head>
+
+    <style>
+        body {
+          background-image: url('img/bg.png');
+          
+        }
+
+        .button {
+           font-family: "Lucida Console", "Courier New", monospace;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+            border: none;
+            color: #000000a6;
+            text-align: center;
+            font-size: 28px;
+            padding: 20px;
+            width: 500px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 10px;
+            text-align: center;
+       }
+        .button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+       }
+        .button span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+       }
+        .button:hover span {
+            padding-right: 25px;
+       }
+        .button:hover span:after {
+            opacity: 1;
+            right: 0;
+       }
+        </style>
+
+    <body>
+        <div class="app-wrap">
+            <header>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
+                <input type="text" autocomplete="off" class="search-box"
+                placeholder="Search">
+            </header>
+            <main>
+                <section class="location">
+                    <p>&nbsp;</p>
+                    <div class="city">Fictional Land</div>
+                    <div class="date">Saturday, June 19 2020X</div>
+                </section>
+                <div class="current">
+                    <p>&nbsp;</p>
+                    <div class="temp">23<span>°C</span></div>
+                    <div class="weather">Extremely Hot</div>
+                    <div class="hi-low">13°C - 46°C</div>
+                </div>
+                <a href="fahrenheit.html"><button class="button"><span>Get weather in Fahrenheit</span></button></a>
+            </main>
+        </div>
+        <script src="js/app_metric.js"></script>
+
+    </body>
+    </html>
